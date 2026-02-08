@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currencyconverter.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <p id="headline">Currency Converter</p>
+    
+    <div class="main">
+        
+        <form class="form">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text">
+            </div>
+
+    <div class="dropdown">
+        <div class="from">
+           <p>From</p>
+           <div class="select-container">
+          <img src="https://flagcdn.com/w320/us.png" alt="USA Flag" style="width:2.75rem" name="us">
+           
+            <select name="from">
+                <option value= "USD" selected>USD</option>
+                
+            </select>
+            </div>
+    </div>
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to"> 
+            <p>To</p>
+            <div class="select-container">
+            <img id ="img"  src="https://flagcdn.com/w320/in.png" alt="India Flag" style="width:2.75rem" name="in">
+           <select name="to">
+               
+                <option value="INR" selected>INR</option>
+                
+           </select>
+           </div>
+        </div>
+    </div>
+    <div id="result">1 USD = 89.4451 INR</div>
+<button id="btn">CONVERT</button>
+    </form> 
+</div>
+<script src="codes.js"></script>
+<script src="currencyconverter.js"></script>
+</body>
+</html>
